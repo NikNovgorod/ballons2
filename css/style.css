@@ -1,0 +1,1305 @@
+@keyframes btnToUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes upToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80% {
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* line 1, ../../HTML MASTER/sass/base/_base.sass */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../HTML MASTER/sass/base/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 1000px) {
+  /* line 6, ../../HTML MASTER/sass/base/_base.sass */
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media (max-width: 850px) {
+  /* line 6, ../../HTML MASTER/sass/base/_base.sass */
+  html {
+    font-size: 42.5%;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 6, ../../HTML MASTER/sass/base/_base.sass */
+  html {
+    font-size: 34.5%;
+  }
+}
+
+@media (max-width: 520px) {
+  /* line 6, ../../HTML MASTER/sass/base/_base.sass */
+  html {
+    font-size: 27.5%;
+  }
+}
+
+@media (max-width: 370px) {
+  /* line 6, ../../HTML MASTER/sass/base/_base.sass */
+  html {
+    font-size: 20%;
+  }
+}
+
+/* line 29, ../../HTML MASTER/sass/base/_base.sass */
+body {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+/* line 33, ../../HTML MASTER/sass/base/_base.sass */
+.container {
+  background-color: #f6e8e8;
+  position: relative;
+  z-index: 0;
+}
+
+/* line 1, ../../HTML MASTER/sass/base/_typography.sass */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* line 9, ../../HTML MASTER/sass/base/_typography.sass */
+.title-first {
+  color: #ffffff;
+}
+
+/* line 11, ../../HTML MASTER/sass/base/_typography.sass */
+.title-first__main {
+  display: block;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  animation-name: upToBottom;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+
+@media (max-width: 680px) {
+  /* line 11, ../../HTML MASTER/sass/base/_typography.sass */
+  .title-first__main {
+    letter-spacing: 0.5rem;
+  }
+}
+
+/* line 28, ../../HTML MASTER/sass/base/_typography.sass */
+.title-first__secondary {
+  display: block;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.5rem;
+  animation-name: rightToLeft;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  margin-bottom: 6.5rem;
+  animation-fill-mode: backwards;
+}
+
+@media (max-width: 680px) {
+  /* line 28, ../../HTML MASTER/sass/base/_typography.sass */
+  .title-first__secondary {
+    margin-bottom: 3.5rem;
+  }
+}
+
+/* line 43, ../../HTML MASTER/sass/base/_typography.sass */
+.title-secondary {
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+}
+
+/* line 52, ../../HTML MASTER/sass/base/_typography.sass */
+.title-secondary_white {
+  color: #ffffff;
+}
+
+/* line 54, ../../HTML MASTER/sass/base/_typography.sass */
+.title-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(0.95);
+  text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 680px) {
+  /* line 43, ../../HTML MASTER/sass/base/_typography.sass */
+  .title-secondary {
+    letter-spacing: 0.5rem;
+  }
+}
+
+/* line 60, ../../HTML MASTER/sass/base/_typography.sass */
+.title-third {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  /* line 60, ../../HTML MASTER/sass/base/_typography.sass */
+  .title-third {
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 60, ../../HTML MASTER/sass/base/_typography.sass */
+  .title-third {
+    font-size: 3rem;
+  }
+}
+
+/* line 70, ../../HTML MASTER/sass/base/_typography.sass */
+.paragraph {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  /* line 70, ../../HTML MASTER/sass/base/_typography.sass */
+  .paragraph {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 850px) {
+  /* line 70, ../../HTML MASTER/sass/base/_typography.sass */
+  .paragraph {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 70, ../../HTML MASTER/sass/base/_typography.sass */
+  .paragraph {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 1, ../../HTML MASTER/sass/base/_utilites.sass */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 4, ../../HTML MASTER/sass/base/_utilites.sass */
+.mb-10px {
+  margin-bottom: 1rem;
+}
+
+/* line 7, ../../HTML MASTER/sass/base/_utilites.sass */
+.mb-25px {
+  margin-bottom: 2.5rem;
+}
+
+/* line 10, ../../HTML MASTER/sass/base/_utilites.sass */
+.mb-30px {
+  margin-bottom: 3rem;
+}
+
+/* line 13, ../../HTML MASTER/sass/base/_utilites.sass */
+.mb-50px {
+  margin-bottom: 5rem;
+}
+
+/* line 16, ../../HTML MASTER/sass/base/_utilites.sass */
+.mb-80px {
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 680px) {
+  /* line 16, ../../HTML MASTER/sass/base/_utilites.sass */
+  .mb-80px {
+    margin-bottom: 5rem;
+  }
+}
+
+/* line 2, ../../HTML MASTER/sass/components/_button.sass */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
+  padding: 1.5rem 4rem;
+  background: white;
+  border-radius: 5rem;
+  transition: all .5s;
+  position: relative;
+  font-size: 2.5rem;
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  /* line 2, ../../HTML MASTER/sass/components/_button.sass */
+  .btn, .btn:link, .btn:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  /* line 2, ../../HTML MASTER/sass/components/_button.sass */
+  .btn, .btn:link, .btn:visited {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 2, ../../HTML MASTER/sass/components/_button.sass */
+  .btn, .btn:link, .btn:visited {
+    font-size: 4rem;
+  }
+}
+
+/* line 18, ../../HTML MASTER/sass/components/_button.sass */
+.btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 21, ../../HTML MASTER/sass/components/_button.sass */
+.btn:hover::after {
+  opacity: 0;
+  transform: scaleX(1.5) scaleY(1.7);
+}
+
+/* line 24, ../../HTML MASTER/sass/components/_button.sass */
+.btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* line 27, ../../HTML MASTER/sass/components/_button.sass */
+.btn::after {
+  content: "";
+  background: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 1s;
+}
+
+/* line 39, ../../HTML MASTER/sass/components/_button.sass */
+.btn_animated {
+  animation: btnToUp 4s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+/* line 44, ../../HTML MASTER/sass/components/_button.sass */
+.btn_brown, .btn_brown:link, .btn_brown:visited {
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.8), rgba(161, 79, 3, 0.8));
+  color: #000000;
+  letter-spacing: 0.2rem;
+}
+
+/* line 49, ../../HTML MASTER/sass/components/_button.sass */
+.btn_brown::after, .btn_brown:link::after, .btn_brown:visited::after {
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.8), rgba(161, 79, 3, 0.8));
+}
+
+/* line 53, ../../HTML MASTER/sass/components/_button.sass */
+.btn2, .btn2:link, .btn2:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
+  padding: 1.5rem 4rem;
+  background: white;
+  border-radius: 5rem;
+  transition: all .5s;
+  position: relative;
+  font-size: 2rem;
+  border: none;
+}
+
+/* line 63, ../../HTML MASTER/sass/components/_button.sass */
+.btn2:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 66, ../../HTML MASTER/sass/components/_button.sass */
+.btn2:hover::after {
+  opacity: 0;
+  transform: scaleX(1.5) scaleY(1.7);
+}
+
+/* line 69, ../../HTML MASTER/sass/components/_button.sass */
+.btn2:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* line 72, ../../HTML MASTER/sass/components/_button.sass */
+.btn2::after {
+  content: "";
+  background: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 1s;
+}
+
+/* line 84, ../../HTML MASTER/sass/components/_button.sass */
+.btn2_animated {
+  animation: btnToUp 4s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+/* line 2, ../../HTML MASTER/sass/components/_button-text.sass */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: #777777;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 1px #a14f03 solid;
+  display: inline-block;
+  transition: 0.5s all;
+}
+
+/* line 12, ../../HTML MASTER/sass/components/_button-text.sass */
+.btn-text:hover {
+  background-color: #eed2b8;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.4rem);
+}
+
+/* line 17, ../../HTML MASTER/sass/components/_button-text.sass */
+.btn-text:active {
+  transform: translateY(0);
+}
+
+/* line 1, ../../HTML MASTER/sass/components/_composition.sass */
+.composition {
+  position: relative;
+}
+
+/* line 3, ../../HTML MASTER/sass/components/_composition.sass */
+.composition__photo {
+  width: 55%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.4s;
+  outline-offset: 0.5rem;
+}
+
+/* line 11, ../../HTML MASTER/sass/components/_composition.sass */
+.composition__photo_n1 {
+  top: 0;
+  left: 2rem;
+}
+
+/* line 14, ../../HTML MASTER/sass/components/_composition.sass */
+.composition__photo_n2 {
+  top: 7rem;
+  right: 2rem;
+}
+
+/* line 17, ../../HTML MASTER/sass/components/_composition.sass */
+.composition__photo_n3 {
+  top: 13rem;
+  left: 4rem;
+}
+
+/* line 20, ../../HTML MASTER/sass/components/_composition.sass */
+.composition__photo:hover {
+  outline: 0.2rem solid #847af4;
+  transform: scale(1.2);
+  z-index: 20;
+}
+
+/* line 24, ../../HTML MASTER/sass/components/_composition.sass */
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.8);
+}
+
+/* line 1, ../../HTML MASTER/sass/components/_adventure-card.sass */
+.adventure-card {
+  padding: 2rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: 0.5s all;
+}
+
+@media (max-width: 680px) {
+  /* line 1, ../../HTML MASTER/sass/components/_adventure-card.sass */
+  .adventure-card {
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* line 10, ../../HTML MASTER/sass/components/_adventure-card.sass */
+.adventure-card:hover {
+  transform: translateY(-1.5rem) scale(1.01);
+  box-shadow: 0.6rem 0.6rem 0.6rem 0.6rem #a6f788;
+}
+
+/* line 13, ../../HTML MASTER/sass/components/_adventure-card.sass */
+.adventure-card__icon {
+  font-size: 6rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* line 1, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card {
+  height: 50rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+
+@media (max-width: 680px) {
+  /* line 1, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card {
+    height: 70rem;
+  }
+}
+
+/* line 8, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__side {
+  height: 50rem;
+  transition: 1s all ease-out;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  backface-visibility: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+@media (max-width: 680px) {
+  /* line 8, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card__side {
+    width: 100%;
+    height: 70rem;
+  }
+}
+
+/* line 24, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__side_back {
+  transform: rotateY(180deg);
+  background: linear-gradient(120deg, #ba8554 0.03%, #a14f03 99.94%);
+}
+
+/* line 27, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card:hover .tour-card__side_front {
+  transform: rotateY(-180deg);
+}
+
+/* line 29, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card:hover .tour-card__side_back {
+  transform: rotateY(0deg);
+}
+
+/* line 31, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__img1 {
+  height: 21rem;
+  background: url(../img/Photo-card1.jpg) center/cover no-repeat;
+}
+
+@media (max-width: 680px) {
+  /* line 31, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card__img1 {
+    height: 40rem;
+  }
+}
+
+/* line 36, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__img2 {
+  height: 21rem;
+  background: url(../img/Photo-card2.jpg) center/cover no-repeat;
+}
+
+@media (max-width: 680px) {
+  /* line 36, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card__img2 {
+    height: 40rem;
+  }
+}
+
+/* line 41, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__img3 {
+  height: 21rem;
+  background: url(../img/Photo-card3.jpg) center/cover no-repeat;
+}
+
+@media (max-width: 680px) {
+  /* line 41, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card__img3 {
+    height: 40rem;
+  }
+}
+
+/* line 46, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+  top: 15rem;
+  right: 0rem;
+}
+
+@media (max-width: 680px) {
+  /* line 46, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card__title {
+    font-size: 4rem;
+  }
+}
+
+/* line 57, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__span {
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  padding: 1rem 2rem 0.3rem 2rem;
+}
+
+/* line 61, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__span_2 {
+  position: absolute;
+  top: 2.4rem;
+  right: 0rem;
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+}
+
+@media (max-width: 680px) {
+  /* line 61, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card__span_2 {
+    top: 4.4rem;
+  }
+}
+
+/* line 70, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__descr ul {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* line 74, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__descr ul li {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  color: #777777;
+  border-bottom: 1px solid #777777;
+  text-align: center;
+}
+
+/* line 80, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__descr ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 680px) {
+  /* line 74, ../../HTML MASTER/sass/components/_tour-card.sass */
+  .tour-card__descr ul li {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 85, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__backside-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 90, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__text {
+  margin-bottom: 8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 96, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__text_1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* line 99, ../../HTML MASTER/sass/components/_tour-card.sass */
+.tour-card__text_2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+/* line 1, ../../HTML MASTER/sass/components/_feedBack-card.sass */
+.feedBack-card {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 2rem;
+  transform: skewX(-15deg);
+}
+
+/* line 8, ../../HTML MASTER/sass/components/_feedBack-card.sass */
+.feedBack-card > * {
+  transform: skewX(15deg);
+}
+
+/* line 10, ../../HTML MASTER/sass/components/_feedBack-card.sass */
+.feedBack-card__img {
+  width: 15rem;
+  height: 15rem;
+  background: green;
+  float: left;
+  margin-right: 4rem;
+  border-radius: 50%;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 21, ../../HTML MASTER/sass/components/_feedBack-card.sass */
+.feedBack-card__img img {
+  height: 100%;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in;
+}
+
+/* line 25, ../../HTML MASTER/sass/components/_feedBack-card.sass */
+.feedBack-card__name {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+/* line 35, ../../HTML MASTER/sass/components/_feedBack-card.sass */
+.feedBack-card:hover .feedBack-card__name {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+/* line 38, ../../HTML MASTER/sass/components/_feedBack-card.sass */
+.feedBack-card:hover img {
+  transform: scale(1);
+  filter: blur(0.3rem) brightness(80%);
+}
+
+/* line 1, ../../HTML MASTER/sass/components/_bg-video.sass */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* line 1, ../../HTML MASTER/sass/components/_form.sass */
+.book {
+  height: 55rem;
+  background: #ffffff;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 60%, rgba(186, 133, 84, 0.8) 60%, rgba(161, 79, 3, 0.2) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
+  box-shadow: 0.6rem 0.6rem 0.6rem 0.6rem #a6f788;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* line 9, ../../HTML MASTER/sass/components/_form.sass */
+.form {
+  width: 70%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+/* line 13, ../../HTML MASTER/sass/components/_form.sass */
+.form__group:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+/* line 15, ../../HTML MASTER/sass/components/_form.sass */
+.form__group:nth-child(4) {
+  margin-bottom: 4rem;
+}
+
+/* line 17, ../../HTML MASTER/sass/components/_form.sass */
+.form__group:nth-child(5) {
+  padding-left: 9rem;
+}
+
+@media (max-width: 680px) {
+  /* line 9, ../../HTML MASTER/sass/components/_form.sass */
+  .form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 520px) {
+  /* line 9, ../../HTML MASTER/sass/components/_form.sass */
+  .form {
+    width: 85%;
+  }
+}
+
+/* line 24, ../../HTML MASTER/sass/components/_form.sass */
+.form__input {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 2rem 0rem 2rem 2rem;
+  background: #ffffff;
+  border: none;
+  border-bottom: 0.3rem solid transparent;
+  border-radius: 0.5rem;
+  width: 70%;
+}
+
+/* line 35, ../../HTML MASTER/sass/components/_form.sass */
+.form__input:focus-visible {
+  outline: none;
+  border-bottom: 0.3rem solid #66D763;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* line 39, ../../HTML MASTER/sass/components/_form.sass */
+.form__input:focus:invalid {
+  border-bottom: 0.3rem solid #D76363;
+}
+
+/* line 42, ../../HTML MASTER/sass/components/_form.sass */
+.form__label {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  transition: 0.7s all;
+}
+
+/* line 52, ../../HTML MASTER/sass/components/_form.sass */
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2rem);
+}
+
+/* line 57, ../../HTML MASTER/sass/components/_form.sass */
+.form__group-radio {
+  width: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  /* line 57, ../../HTML MASTER/sass/components/_form.sass */
+  .form__group-radio {
+    display: block;
+    margin-bottom: 2rem;
+    width: 60%;
+  }
+}
+
+/* line 65, ../../HTML MASTER/sass/components/_form.sass */
+.form__input-radio {
+  display: none;
+}
+
+/* line 68, ../../HTML MASTER/sass/components/_form.sass */
+.form__label-radio {
+  cursor: pointer;
+  position: relative;
+  padding-left: 4rem;
+}
+
+/* line 74, ../../HTML MASTER/sass/components/_form.sass */
+.form__button-radio {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 0.5rem solid #ba8554;
+  display: block;
+  position: absolute;
+  left: 0rem;
+  top: -0.6rem;
+}
+
+/* line 83, ../../HTML MASTER/sass/components/_form.sass */
+.form__button-radio::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: #ba8554;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+/* line 96, ../../HTML MASTER/sass/components/_form.sass */
+.form__input-radio:checked ~ .form__label-radio .form__button-radio::after {
+  opacity: 1;
+}
+
+/* line 1, ../../HTML MASTER/sass/layout/_header.sass */
+.header {
+  position: relative;
+  height: 80vh;
+  background: url(../img/header-background.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+/* line 6, ../../HTML MASTER/sass/layout/_header.sass */
+.header__logo {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  height: 7rem;
+  width: 5.6rem;
+}
+
+@media (max-width: 1000px) {
+  /* line 6, ../../HTML MASTER/sass/layout/_header.sass */
+  .header__logo {
+    height: 8rem;
+    width: 6.6rem;
+  }
+}
+
+@media (max-width: 850px) {
+  /* line 6, ../../HTML MASTER/sass/layout/_header.sass */
+  .header__logo {
+    height: 15rem;
+    width: 13.6rem;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 6, ../../HTML MASTER/sass/layout/_header.sass */
+  .header__logo {
+    height: 20rem;
+    width: 18.6rem;
+  }
+}
+
+/* line 21, ../../HTML MASTER/sass/layout/_header.sass */
+.header__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* line 3, ../../HTML MASTER/sass/layout/_grid.sass */
+.row {
+  max-width: 114rem;
+  margin: 0 2rem;
+}
+
+/* line 6, ../../HTML MASTER/sass/layout/_grid.sass */
+.row:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+/* line 8, ../../HTML MASTER/sass/abstracts/_mixins.sass */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 11, ../../HTML MASTER/sass/layout/_grid.sass */
+.col-1-of-2 {
+  width: calc((100% - 3rem)/2);
+}
+
+/* line 15, ../../HTML MASTER/sass/layout/_grid.sass */
+.col-1-of-3 {
+  width: calc((100% - 2 * 3rem)/3);
+}
+
+/* line 19, ../../HTML MASTER/sass/layout/_grid.sass */
+.col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 3rem) / 3) + 3rem);
+}
+
+/* line 22, ../../HTML MASTER/sass/layout/_grid.sass */
+.col-1-of-4 {
+  width: calc((100% - 3 * 3rem)/4);
+}
+
+/* line 26, ../../HTML MASTER/sass/layout/_grid.sass */
+.col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 3rem) / 4) + 3rem);
+}
+
+/* line 29, ../../HTML MASTER/sass/layout/_grid.sass */
+.col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem);
+}
+
+/* line 33, ../../HTML MASTER/sass/layout/_grid.sass */
+[class^="col-"] {
+  float: left;
+}
+
+/* line 34, ../../HTML MASTER/sass/layout/_grid.sass */
+[class^="col-"]:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media (max-width: 680px) {
+  /* line 33, ../../HTML MASTER/sass/layout/_grid.sass */
+  [class^="col-"] {
+    width: 100%;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+/* line 2, ../../HTML MASTER/sass/layout/_footer.sass */
+.footer {
+  background: #333333;
+}
+
+/* line 5, ../../HTML MASTER/sass/layout/_footer.sass */
+.footer__logo {
+  width: 12rem;
+}
+
+/* line 8, ../../HTML MASTER/sass/layout/_footer.sass */
+.footer__list {
+  list-style: none;
+  text-align: center;
+}
+
+/* line 12, ../../HTML MASTER/sass/layout/_footer.sass */
+.footer__item {
+  display: inline-block;
+}
+
+/* line 14, ../../HTML MASTER/sass/layout/_footer.sass */
+.footer__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+/* line 18, ../../HTML MASTER/sass/layout/_footer.sass */
+.footer__link:link, .footer__link:visited {
+  color: yellow;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+@media (max-width: 680px) {
+  /* line 18, ../../HTML MASTER/sass/layout/_footer.sass */
+  .footer__link:link, .footer__link:visited {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 31, ../../HTML MASTER/sass/layout/_footer.sass */
+.footer__link:hover {
+  transform: rotate(5deg) scale(1.3);
+  color: yellowgreen;
+}
+
+/* line 3, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__toggle {
+  display: none;
+}
+
+/* line 6, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__button {
+  background: #ffffff;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 4rem;
+  right: 5rem;
+  z-index: 200;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 19, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__background {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 30%;
+  background: radial-gradient(#ba8554, #a14f03);
+  position: fixed;
+  right: 6rem;
+  top: 5rem;
+  z-index: 100;
+  transition: all 2s;
+}
+
+/* line 32, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__nav {
+  height: 30vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 150;
+  opacity: 0;
+  width: 0;
+  transition: all 2s;
+}
+
+/* line 44, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__list {
+  list-style: none;
+  position: absolute;
+  top: 30rem;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1400px) {
+  /* line 44, ../../HTML MASTER/sass/layout/_navigation.sass */
+  .navigation__list {
+    top: 120%;
+  }
+}
+
+/* line 53, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__item {
+  text-align: center;
+}
+
+/* line 55, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* line 59, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__link:link, .navigation__link:visited {
+  font-size: 1.6rem;
+  color: yellow;
+  letter-spacing: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: linear-gradient(120deg, red 0%, black 40%, #ffffff 50%);
+  background-size: 220%;
+  padding: 1rem 2rem;
+  transition: all 1s;
+  display: inline-block;
+}
+
+/* line 71, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #a14f03;
+  transform: translateX(1rem);
+}
+
+/* line 76, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__toggle:checked ~ .navigation__background {
+  transform: scale(20);
+}
+
+/* line 78, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__toggle:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+}
+
+/* line 82, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+/* line 85, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 3rem;
+  height: 0.2rem;
+  background: #000000;
+  display: inline-block;
+}
+
+/* line 92, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+
+/* line 98, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__icon::before {
+  top: -0.8rem;
+}
+
+/* line 100, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__icon::after {
+  top: 0.8rem;
+}
+
+/* line 103, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem;
+}
+
+/* line 105, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem;
+}
+
+/* line 108, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__toggle:checked + .navigation__button .navigation__icon {
+  background: transparent;
+}
+
+/* line 111, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__toggle:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+/* line 114, ../../HTML MASTER/sass/layout/_navigation.sass */
+.navigation__toggle:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+/* line 1, ../../HTML MASTER/sass/pages/_home.sass */
+.section-about {
+  padding-top: 8rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 680px) {
+  /* line 1, ../../HTML MASTER/sass/pages/_home.sass */
+  .section-about {
+    margin-bottom: 50rem;
+  }
+}
+
+/* line 7, ../../HTML MASTER/sass/pages/_home.sass */
+.section-adventure {
+  margin-bottom: 6.5rem;
+  padding: 21.5rem 0;
+  background: url(../img/section-adventure.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 15%, 100% 99%, 0 85%);
+}
+
+/* line 15, ../../HTML MASTER/sass/pages/_home.sass */
+.section-feedBack {
+  padding: 4rem;
+  position: relative;
+}
+
+/* line 19, ../../HTML MASTER/sass/pages/_home.sass */
+.section-book {
+  padding: 4rem 2rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.8), rgba(161, 79, 3, 0.8));
+}
+
+/* line 24, ../../HTML MASTER/sass/pages/_home.sass */
+.footer {
+  padding: 4rem 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
